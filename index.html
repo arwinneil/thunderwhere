@@ -27,7 +27,7 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 90%;
       }
 
       /* Optional: Makes the sample page fill the window. */
@@ -67,7 +67,7 @@
           //infoWindow.open(map);
           // map.setCenter(pos);
 
-          mymap = L.map("map").setView(center, 13);
+          mymap = L.map("map").setView(center, 18);
 
           L.tileLayer(
             "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
