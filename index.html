@@ -1,4 +1,3 @@
-<!-- saved from url=(0097)https://google-developers.appspot.com/maps/documentation/javascript/examples/full/map-geolocation -->
 <html>
   <head>
     <title>Geolocation</title>
@@ -53,14 +52,7 @@
       var mymap, infoWindow, center;
 
       var array = [];
-      // function initMap() {
-      //   map = new google.maps.Map(document.getElementById("map"), {
-      //     center: { lat: -34.397, lng: 150.644 },
-      //     zoom: 13
-      //   });
-      //   infoWindow = new google.maps.InfoWindow();
 
-      // Try HTML5 geolocation.
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
           var pos = {
@@ -69,11 +61,6 @@
           };
 
           center = pos;
-
-          //infoWindow.setPosition(pos);
-          //infoWindow.setContent("Location found.");
-          //infoWindow.open(map);
-          // map.setCenter(pos);
 
           mymap = L.map("map").setView(center, 13);
 
@@ -110,11 +97,8 @@
         array.length = 0;
 
         endTime = new Date();
-        var timeDiff = endTime - startTime; //in ms
-        // strip the ms
-        //timeDiff /= 1000;
+        var timeDiff = endTime - startTime;
 
-        // get seconds
         var seconds = Math.round(timeDiff);
         console.log(seconds + " ms");
 
@@ -145,31 +129,6 @@
         mymap.flyToBounds(array[0].getBounds(), 13);
       }
     </script>
-
-    <!-- <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-         
-        </div>
-      </div>
-    </section> -->
-
-    <!-- 
-        <p class="is-size-7">
-          Sound travels through air at "the speed of sound." Officially, the
-          speed of sound is 331.3 meters per second (1,087 feet per second) in
-          dry air at 0 degrees Celsius (32 degrees Fahrenheit). At a temperature
-          like 28 degrees C (82 degrees F), the speed is 346 meters per second.
-          As you can see, the speed of sound changes depending on the
-          temperature and the humidity; but if you want a round number, then
-          something like 350 meters per second and 1,200 feet per second are
-          reasonable numbers to use. So sound travels 1 kilometer in roughly 3
-          seconds and 1 mile in roughly 5 seconds. When you see the flash of a
-          lightning bolt, you can start counting seconds and then divide to see
-          how far away the lightning struck. If it takes 10 seconds for the
-          thunder to roll in, the lightning struck about 2 miles or 3 kilometers
-          away.
-        </p> -->
 
     <div id="map"></div>
 
