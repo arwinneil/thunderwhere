@@ -96,7 +96,7 @@
 
       function end() {
         while (array.length) {
-          array.pop().setMap(null);
+          mymap.removeLayer(array.pop());
         }
 
         array.length = 0;
@@ -147,7 +147,7 @@
             <a class="button" onclick="end()">I HEAR THUNDER 📢</a>
           </p>
         </div>
-
+        <!-- 
         <p class="is-size-7">
           Sound travels through air at "the speed of sound." Officially, the
           speed of sound is 331.3 meters per second (1,087 feet per second) in
@@ -162,7 +162,7 @@
           how far away the lightning struck. If it takes 10 seconds for the
           thunder to roll in, the lightning struck about 2 miles or 3 kilometers
           away.
-        </p>
+        </p> -->
       </div>
 
       <div class="column">
