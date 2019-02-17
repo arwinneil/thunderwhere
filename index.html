@@ -130,9 +130,17 @@
           }).addTo(mymap)
         );
 
-        array[0]
-          .bindPopup("⚡ about " + Math.round(radius) + "m away.")
-          .openPopup();
+        var message = "";
+
+        if (radius > 1000) {
+          radius = (radius / 1000).toFixed(1);
+
+          message = radius + " km";
+        } else {
+          message = Math.round(radius) + " m";
+        }
+
+        array[0].bindPopup("⚡ about " + message + " away.").openPopup();
 
         mymap.flyToBounds(array[0].getBounds(), 13);
       }
