@@ -135,27 +135,17 @@
       }
     </script>
 
-    <div class="columns">
-      <div class="column is-one-quarter">
-        <section class="hero">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title">
-                ThunderWhere 🌩
-              </h1>
-            </div>
-          </div>
-        </section>
-
-        <div class="field is-grouped">
-          <p class="control">
-            <a class="button " onclick="start()">I SEE LIGHTING⚡</a>
-          </p>
-          <p class="control">
-            <a class="button" onclick="end()">I HEAR THUNDER 📢</a>
-          </p>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            ThunderWhere 🌩
+          </h1>
         </div>
-        <!-- 
+      </div>
+    </section>
+
+    <!-- 
         <p class="is-size-7">
           Sound travels through air at "the speed of sound." Officially, the
           speed of sound is 331.3 meters per second (1,087 feet per second) in
@@ -171,28 +161,21 @@
           thunder to roll in, the lightning struck about 2 miles or 3 kilometers
           away.
         </p> -->
-      </div>
 
-      <div class="column">
-        <div id="map"></div>
+    <div id="map"></div>
 
-
-
-          <div id="button-wrapper">
-
-              <div class="field is-grouped">
-                <p class="control">
-                  <a class="button " onclick="start()">I SEE LIGHTING⚡</a>
-                </p>
-                <p class="control">
-                  <a class="button" onclick="end()">I HEAR THUNDER 📢</a>
-                </p>
-              </div>
-
-          </div>
-           
-          </div>
-        </div>
+    <div id="button-wrapper">
+      <div class="field is-grouped">
+        <p class="control">
+          <a class="button is-rounded is-success" onclick="start()"
+            >I SEE LIGHTING⚡</a
+          >
+        </p>
+        <p class="control">
+          <a class="button is-rounded is-success" onclick="end()"
+            >I HEAR THUNDER 📢</a
+          >
+        </p>
       </div>
     </div>
 
