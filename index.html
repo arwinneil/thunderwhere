@@ -40,7 +40,7 @@
 
       #button-wrapper {
         position: absolute;
-        bottom: 10px;
+        top: 10px;
         width: 100%;
 
         z-index: 500;
@@ -135,15 +135,13 @@
       }
     </script>
 
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
-            ThunderWhere 🌩
-          </h1>
+         
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- 
         <p class="is-size-7">
@@ -167,17 +165,28 @@
     <div id="button-wrapper">
       <div class="container">
         <div class="notification">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="button is-rounded is-success" onclick="start()"
-                >I SEE LIGHTING⚡</a
-              >
-            </p>
-            <p class="control">
-              <a class="button is-rounded is-success" onclick="end()"
-                >I HEAR THUNDER 📢</a
-              >
-            </p>
+          <div class="columns">
+            <div class="column">
+              <h1 class="title">
+                ThunderWhere 🌩
+              </h1>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="button is-rounded is-success" onclick="start()"
+                    >I SEE LIGHTING⚡</a
+                  >
+                </p>
+                <p class="control">
+                  <a class="button is-rounded is-success" onclick="end()"
+                    >I HEAR THUNDER 📢</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
