@@ -87,6 +87,8 @@
 
       function start() {
         startTime = new Date();
+
+        document.getElementById("li-btn").setAttribute("disabled", "");
       }
 
       function end() {
@@ -127,6 +129,8 @@
         array[0].bindPopup("⚡ about " + message + " away.").openPopup();
 
         mymap.flyToBounds(array[0].getBounds(), 13);
+
+        document.getElementById("li-btn").removeAttribute("disabled");
       }
     </script>
 
@@ -146,12 +150,18 @@
             <div class="column is-4 is-offset-1">
               <div class="field is-grouped">
                 <p class="control">
-                  <a class="button is-rounded is-success" onclick="start()"
+                  <a
+                    class="button is-rounded is-success"
+                    id="li-btn"
+                    onclick="start()"
                     >I SEE LIGHTNING⚡</a
                   >
                 </p>
                 <p class="control">
-                  <a class="button is-rounded is-success" onclick="end()"
+                  <a
+                    class="button is-rounded is-success"
+                    id="snd-btn"
+                    onclick="end()"
                     >I HEAR THUNDER 📢</a
                   >
                 </p>
