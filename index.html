@@ -130,7 +130,9 @@
           }).addTo(mymap)
         );
 
-        array[0].bindPopup(radius + "m").openPopup();
+        array[0]
+          .bindPopup("⚡ about " + Math.round(radius) + "m away.")
+          .openPopup();
 
         mymap.flyToBounds(array[0].getBounds(), 13);
       }
@@ -169,7 +171,7 @@
           <div class="columns">
             <div class="column is-mobile">
               <h1 class="title">
-                ThunderWhere 🌩
+                ThunderWhere 🌩👙
               </h1>
             </div>
             <div class="column is-hidden-mobile"></div>
